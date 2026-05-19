@@ -1,0 +1,6 @@
+id=meta-key-blocker
+name=Keyboard Meta Key Blocker
+version=v1.0.0
+versionCode=10000
+author=GoodbyeNJN
+description=Systemlessly blocks the KEY_LEFTMETA (Win/Cmd key) keyboard input by mapping it to UNKNOWN.
