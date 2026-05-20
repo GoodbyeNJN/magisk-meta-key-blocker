@@ -19,7 +19,7 @@ The module implements its functionality by modifying the following file:
 /system/usr/keylayout/Generic.kl
 ```
 
-The principle is to change the `KEY_LEFTMETA` key mapping in the standard generic keyboard layout file to `UNKNOWN`, causing the system to completely ignore this input.
+The principle is to comment out the `KEY_LEFTMETA` key mapping in the standard generic keyboard layout file, causing the system to completely ignore this input.
 
 ## 🐛 Troubleshooting
 
@@ -35,7 +35,6 @@ adb shell su -c "cat /system/usr/keylayout/Generic.kl | grep 'key 125'"
 
 ```
 # key 125   META_LEFT
-key 125   UNKNOWN
 ```
 
 **If the output doesn't match:**
