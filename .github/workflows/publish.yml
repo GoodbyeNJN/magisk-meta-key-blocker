@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0
 
       - name: Archive
-        run: zip -r magisk-meta-key-blocker-${{ github.ref_name }}.zip . -x .github/\* -x .git/\* -x .gitignore
+        run: cd module && zip -r ../magisk-meta-key-blocker-${{ github.ref_name }}.zip .
 
       - name: Release
         uses: softprops/action-gh-release@v3
